@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/logs/logs",
+    "pages/index/index",
+    "pages/outLink/baidu"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "4cBIM",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  }
+}
