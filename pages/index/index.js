@@ -12,8 +12,8 @@ Page({
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
-      url: '../logs/logs'
-      // url: '../outLink/baidu'
+      // url: '../logs/logs'
+      url: '../home/home'
     })
   },
   onLoad: function () {

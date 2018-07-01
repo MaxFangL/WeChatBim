@@ -1,14 +1,50 @@
 {
-  "pages":[
-    "pages/logs/logs",
+  "pages": [
     "pages/index/index",
-    "pages/outLink/baidu"
+    "pages/home/home",
+    "pages/logs/logs",
+    "pages/map/map",
+    "pages/RichScan/RichScan"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "4cBIM",
-    "navigationBarTextStyle":"black",
+    "navigationBarTitleText": "4CBIM管理平台",
+    "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/homePage.png",
+        "selectedIconPath": "images/homePage-active.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "images/reminder.png",
+        "selectedIconPath": "images/reminder-active.png"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "text": "地图",
+        "iconPath": "images/orientationMap.png",
+        "selectedIconPath": "images/orientationMap-active.png"
+      },
+      {
+        "pagePath": "pages/RichScan/RichScan",
+        "text": "二维码",
+        "iconPath": "images/RichScan.png",
+        "selectedIconPath": "images/RichScan-active.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "我的",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine-active.png"
+      }
+    ]
   }
 }

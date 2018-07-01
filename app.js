@@ -35,5 +35,30 @@ App({
   },
   globalData: {
     userInfo: null
+  },
+  // post请求封装
+  post: ( url, data ) => {
+    let promise = new Promise(( resolve, rejcet ) => {
+      let that = this;
+      let postData = data;
+
+      wx.request({
+        url: url,
+        data: postData,
+        method: 'POST',
+        header: { 'content-type': 'application/x-www-form-urlencoded' },
+        success: res => {
+          if(res.data.status === 1) {
+            resolve( res.data.data );
+          }else { //返回错误提示信息
+            rejcet( res.data.info );
+          }
+        },
+        error: e => {
+          rejcet('网络错误');
+        }
+      })
+    });
+    return promise;
   }
 })
